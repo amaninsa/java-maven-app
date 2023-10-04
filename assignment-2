@@ -1,0 +1,67 @@
+creating the git working directory
+mkdir git-assignment-2
+
+
+initializing the git to start track the files in git working directory
+git init
+
+
+(creating feature1.txt and feature2.txt in master branch)
+git branch 
+touch feature1.txt feature2.txt
+
+
+creating the 3 branches develop , feature1 , feature2 in master branch 
+git branch develop
+git branch feature1
+git branch feature2
+
+
+(creating the develop.txt in develop branch )
+git checkout develop
+touch develop.txt
+
+(stashing the develop.txt , and checking out to feature1 branch)
+git stash develop.txt
+git checkout feature1
+
+
+creating new.txt file in feature1 branch , and then staged and commited new.txt file	
+touch new.txt 
+git add new.txt
+git commit -m "commiting new.txt"
+
+
+
+checking out to develop branch and then unstashing the new.txt file and commiting it
+git checkout develop
+git stash -p
+git commit -m "new.txt file"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git commit -m "commiting develop.txt
+git commit -m "commiting develop.txt"
+git add develop.txt
+git commit -m "commiting develop.txt"

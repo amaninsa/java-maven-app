@@ -1,0 +1,27 @@
+creating a directory
+mkdir git-assignment 
+
+
+navigating to the creatd directory  
+cd git-assignment
+
+
+creating 3 files
+touch log.txt code.txt output.txt
+
+
+initializing the git to track the files
+git init 
+
+
+adding the files to staging area
+git add code.txt output.txt
+
+
+commiting the staged files
+git commit -m "assignment 1"
+
+
+pushing the commiting files to the git respository
+git push -u origin master
+

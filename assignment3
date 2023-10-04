@@ -1,0 +1,46 @@
+Creating a git working directory:
+mkdir git-assignment3
+cd git-assignmnt-3
+git init	( initializing the git to tranck the changes in the files )
+ 
+Creating the develop , f1 and f2 branch 
+  753  git branch develop
+  754  git branch f1 
+  755  git branch f2
+  
+  
+Creating and commiting main.txt file in master branch
+git checkout master
+touch main.txt
+git add main.txt
+git commit -m "commiting main.txt"
+
+
+
+Creating develop.txt in develop branch , f1.txt in f1 branch and f2.txt in f2 branch:
+git checkout develop
+touch develop.txt
+git checkout f1
+touch f1.txt
+git checkout f2
+touch f2.txt
+
+
+
+Pushing all branches to the github repository:
+git remote add origin https://github.com/amaninsa/assignment.git
+git push -u origin master
+git push -u origin develop
+git push -u origin f1
+git push -u origin f2
+
+
+
+On local deleting the f2 branch
+git branch f2 -D
+  
+  
+  
+Deleting f2 branch on Github respository from local
+git push origin -d f2
+
